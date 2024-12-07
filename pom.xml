@@ -11,6 +11,7 @@
 	<groupId>com.klu</groupId>
 	<artifactId>e-commerce</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
+	<packaging>jar</packaging>
 	<name>e-commerce</name>
 	<description>Implement Authentication Using spring Security and Jwt</description>
 	<properties>
