@@ -38,10 +38,10 @@ import com.razorpay.RazorpayException;
 public class PaymentController {
 	
 //	   @Value("${razorpay.api.key}")
-	    private String apiKey="rzp_test_2wcmuGSwG81Q3c";
+	    private String apiKey="";
 
 //	    @Value("${razorpay.api.secret}")
-	    private String apiSecret="XO6LynSNiVMQXidi7CNbV19A";
+	    private String apiSecret="";
 	
     @Autowired
 	private OrderService orderService;
@@ -94,7 +94,7 @@ public class PaymentController {
 		      paymentLinkRequest.put("reminder_enable",true);
 
 		      // Set the callback URL and method
-		      paymentLinkRequest.put("callback_url","https://fashionapp-pied.vercel.app/payment/"+orderId);
+		      paymentLinkRequest.put("callback_url",""+orderId);
 		      paymentLinkRequest.put("callback_method","get");
 
 		      // Create the payment link using the paymentLink.create() method
