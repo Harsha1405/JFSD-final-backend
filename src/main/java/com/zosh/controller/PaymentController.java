@@ -38,10 +38,10 @@ import com.razorpay.RazorpayException;
 public class PaymentController {
 	
 //	   @Value("${razorpay.api.key}")
-	    private String apiKey="";
+	    private String apiKey="rzp_test_2wcmuGSwG81Q3c";
 
 //	    @Value("${razorpay.api.secret}")
-	    private String apiSecret="";
+	    private String apiSecret="XO6LynSNiVMQXidi7CNbV19A";
 	
     @Autowired
 	private OrderService orderService;
